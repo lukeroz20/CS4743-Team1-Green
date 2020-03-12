@@ -286,6 +286,18 @@ MonoBehaviour:
   orbitProgress: 0.1
   orbitPeriod: 340.032
   orbitActive: 1
+--- !u!114 &20630638 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114000011273627542, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 785226150}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a5fb0ca93b55ef4b8d54b512b103341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &34598059
 GameObject:
   m_ObjectHideFlags: 0
@@ -1670,6 +1682,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11401046, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: trackedObject
+      value: 
+      objectReference: {fileID: 891509536}
+    - target: {fileID: 11450312, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: trackedObject
+      value: 
+      objectReference: {fileID: 20630638}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
 --- !u!1 &857453230
@@ -1712,6 +1732,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &891509536 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114000011957598740, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 785226150}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a5fb0ca93b55ef4b8d54b512b103341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1011967607
 GameObject:
   m_ObjectHideFlags: 0
@@ -2347,6 +2379,10 @@ PrefabInstance:
     - target: {fileID: 1599452214353238, guid: 68833d52a1ec6984b952ac2173df769e, type: 3}
       propertyPath: m_Name
       value: Sun Core
+      objectReference: {fileID: 0}
+    - target: {fileID: 1599452214353238, guid: 68833d52a1ec6984b952ac2173df769e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4432419364253150, guid: 68833d52a1ec6984b952ac2173df769e, type: 3}
       propertyPath: m_LocalPosition.x
