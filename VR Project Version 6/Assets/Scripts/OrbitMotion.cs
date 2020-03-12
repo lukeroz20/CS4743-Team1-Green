@@ -14,8 +14,6 @@ public class OrbitMotion : MonoBehaviour
     public bool orbitActive = true;
 
 
-    //public SteamVR_Action_Boolean grabPinch; //Grab Pinch is the trigger, select from inspecter
-    //public SteamVR_Input_Sources inputSource = SteamVR_Input_Sources.Any;
 
     void Start()
     {
@@ -25,7 +23,6 @@ public class OrbitMotion : MonoBehaviour
             return;
         }
         SetOrbitingObjectPosition();
-        //StartCoroutine(AnimateOrbit());
 
         //Create listeners
         SteamVR_Actions.default_GrabPinch.AddOnStateDownListener(TriggerPressed, SteamVR_Input_Sources.Any);
@@ -55,28 +52,11 @@ public class OrbitMotion : MonoBehaviour
         print("Trigger released!");
         orbitPeriod = orbitPeriod * 3;
     }
+    
 
     void SetOrbitingObjectPosition()
     {
         Vector3 orbitPos = orbitPath.Evaluate(orbitProgress);
         orbitingObject.localPosition = new Vector3(orbitPos.x, 0, orbitPos.z);
     }
-    //IEnumerator AnimateOrbit()
-    //{
-    //    if( orbitPeriod < 0.1f)
-    //    {
-    //        orbitPeriod = 0.1f;
-    //    }
-    //    float orbitSpeed = 1f / orbitPeriod;
-    //    while (orbitActive)
-    //    {
-    //        {
-    //            orbitProgress += Time.deltaTime * orbitSpeed;
-    //            orbitProgress %= 1f;
-    //            SetOrbitingObjectPosition();
-    //            yield return null;
-    //        }
-    //        return null;
-    //}
-
 }
